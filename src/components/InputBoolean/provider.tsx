@@ -1,8 +1,8 @@
 import { ChangeEvent } from "react";
-import { InputTextProps } from "./types";
+import { InputBooleanProps } from "./types";
 
-export const useProvider = (props: InputTextProps) => {
-  const { label, value, name, type, onChange } = props;
+export const useProvider = (props: InputBooleanProps) => {
+  const { label, value, name, type, id, onChange } = props;
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -15,6 +15,7 @@ export const useProvider = (props: InputTextProps) => {
     value,
     name,
     type,
+    id,
     handleChange,
   };
 };

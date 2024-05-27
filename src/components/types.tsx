@@ -1,4 +1,4 @@
-export type InputTextState = {
+export type InputState = {
   name: string;
   value: string;
 };

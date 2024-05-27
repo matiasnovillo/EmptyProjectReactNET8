@@ -1,2 +1,1 @@
-export * from "./InputTextBasic";
-export * from "./InputTextURL";
+export * from "./InputText";

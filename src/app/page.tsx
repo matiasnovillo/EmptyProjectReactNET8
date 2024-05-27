@@ -1,5 +1,5 @@
 "use client";
-import { InputTextBasic, InputTextURL } from "@/components";
+import { InputText } from "@/components";
 import styles from "./page.module.css";
 import { useState } from "react";
 import { InputState } from "@/components/types";
@@ -21,14 +21,14 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <InputTextBasic
+      <InputText
         label="InputTextBasic"
         value=""
         name="inputtextbasic"
         type="text"
         onChange={handleChange}
       />
-      <InputTextURL
+      <InputText
         label="InputTextURL"
         value=""
         name="inputtexturl"

@@ -1,7 +1,7 @@
 import { ChangeEvent } from "react";
-import { InputTextBasicProps } from "./types";
+import { InputTextProps } from "./types";
 
-export const useProvider = (props: InputTextBasicProps) => {
+export const useProvider = (props: InputTextProps) => {
   const { label, value, name, type, onChange } = props;
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {

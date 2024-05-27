@@ -1,7 +1,9 @@
-import { useProvider } from "./provider";
-import { InputTextURLProps } from "./types";
+"use client";
 
-export const InputTextURL = (props: InputTextURLProps) => {
+import { useProvider } from "./provider";
+import { InputTextProps } from "./types";
+
+export const InputText = (props: InputTextProps) => {
   const { label, value, name, type, handleChange } = useProvider(props);
 
   return (

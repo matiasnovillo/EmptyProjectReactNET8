@@ -1,5 +1,5 @@
 "use client";
-import { InputBoolean, InputGeneric } from "@/components";
+import { InputBoolean, InputGeneric, InputFile } from "@/components";
 import styles from "./page.module.css";
 import { useState } from "react";
 import { InputState } from "@/components/types";
@@ -51,6 +51,22 @@ export default function Home() {
         name="inputtexturl"
         id="inputtexturl"
         type="url"
+        onChange={handleChange}
+      />
+      <InputGeneric
+        label="InputTextPassword"
+        value={request.value}
+        name="inputtextpassword"
+        id="inputtextpassword"
+        type="password"
+        onChange={handleChange}
+      />
+      <InputFile
+        label="InputTextFile"
+        value={request.value}
+        name="inputtextfile"
+        id="inputtextfile"
+        type="file"
         onChange={handleChange}
       />
     </main>

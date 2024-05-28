@@ -6,8 +6,8 @@ import { InputState } from "@/components/types";
 
 export default function Home() {
   const [request, setRequest] = useState<{
-    user?: string;
-    pass?: string;
+    name?: string;
+    value?: string;
   }>({});
 
   const handleChange: any = (state: InputState) => {
@@ -31,7 +31,7 @@ export default function Home() {
       />
       <InputGeneric
         label="InputDateTime"
-        value=""
+        value={request.value}
         name="inputdatetime"
         id="inputdatetime"
         type="datetime"
@@ -39,15 +39,7 @@ export default function Home() {
       />
       <InputGeneric
         label="InputTextBasic"
-        value=""
-        name="inputtextbasic"
-        id="inputtextbasic"
-        type="text"
-        onChange={handleChange}
-      />
-      <InputGeneric
-        label="InputTextBasic"
-        value=""
+        value={request.value}
         name="inputtextbasic"
         id="inputtextbasic"
         type="text"
@@ -55,18 +47,10 @@ export default function Home() {
       />
       <InputGeneric
         label="InputTextURL"
-        value=""
+        value={request.value}
         name="inputtexturl"
         id="inputtexturl"
         type="url"
-        onChange={handleChange}
-      />
-      <InputGeneric
-        label="InputTextFile"
-        value=""
-        name="inputtextfile"
-        id="inputtextfile"
-        type="file"
         onChange={handleChange}
       />
     </main>
